@@ -1,0 +1,8 @@
+<h1> jogadores </h1>
+{% {% for jogadores in jogadores %}
+            <p><li> <strong>Nome Do usuario:</strong> {{ jogadores.nome }}</li></p>
+            <p><li> <strong>Matricula/:</strong> {{ jogadores.matricula }}</li></p>
+            <p><li> <strong>idade:</strong> {{ jogadores.idade }}</li></p>
+            <p><li> <strong>cidade:</strong> {{ jogadores.cidade }}</li></p>
+
+{% endfor %}%}
