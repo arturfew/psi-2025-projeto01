@@ -1,8 +1,11 @@
-<h1> jogadores </h1>
-{% {% for jogadores in jogadores %}
-            <p><li> <strong>Nome Do usuario:</strong> {{ jogadores.nome }}</li></p>
-            <p><li> <strong>Matricula/:</strong> {{ jogadores.matricula }}</li></p>
-            <p><li> <strong>idade:</strong> {{ jogadores.idade }}</li></p>
-            <p><li> <strong>cidade:</strong> {{ jogadores.cidade }}</li></p>
 
-{% endfor %}%}
+    <h1>Jogadores</h1>
+    
+    <ul>
+    {% for jogador in jogadores %}
+        <li><strong>Nome de usuário:</strong> {{ jogador.nome }}</li>
+        <li><strong>posição:</strong> {{ posicão }}</li>
+        <li><strong>Idade:</strong> {{ jogador.idade }}</li>
+        <br>
+    {% endfor %}
+    </ul>
