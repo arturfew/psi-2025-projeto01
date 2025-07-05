@@ -4,8 +4,9 @@
     <ul>
     {% for jogador in jogadores %}
         <li><strong>Nome de usuário:</strong> {{ jogador.nome }}</li>
-        <li><strong>posição:</strong> {{ posicão }}</li>
+        <li><strong>posição:</strong> {{ jogador.posicao }}</li>
         <li><strong>Idade:</strong> {{ jogador.idade }}</li>
+        <li><strong>nascimento: </strong> {{ jogador.nascimento }}</li>
         <br>
     {% endfor %}
     </ul>
