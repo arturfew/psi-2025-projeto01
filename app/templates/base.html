@@ -1,30 +1,42 @@
+{% load static %}  <!-- sempre carregue static no base.html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Início - flamengo 2019</title>
-    <link rel="stylesheet" href="style.css">
+    <title>{% block title %}Início - Flamengo 2019{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    {% block head %}{% endblock %}
 </head>
 <body>
+
     <header>
-        <h1>flamengo 2019</h1>
+        <h1>Flamengo 2019</h1>
         <p>Paixão pelo futebol, dentro e fora de campo</p>
     </header>
 
+    {% block nav %}
     <nav>
-        <a href="index.html">Início</a>
-        <a href="jogadores.html">Jogadores</a>
-        <a href="sobre.html">Sobre</a>
+        <a href="{% url 'inicio' %}">Início</a>
+        <a href="{% url 'jogadores' %}">Jogadores</a>
+        <a href="{% url 'sobre' %}">Sobre</a>
     </nav>
+    {% endblock %}
 
     <main>
-        <h2>Bem-vindo ao site oficial da nossa equipe!</h2>
-        <p>Acompanhe tudo sobre nossos jogos, jogadores e história.</p>
-        <p>Masculino, Feminino, Sub-20 — todos jogando com garra e coração!</p>
+        {% block content %}
+        <h2>Bem-vindo ao nosso site</h2>
+        <p>saiba um pouco sobre o time campeão da Libertadores 2019</p>
+        {% endblock %}
     </main>
 
+    {% block footer %}
     <footer>
-        &copy; 2025 Equipe Brasil FC
+        &copy; todos os direitos reservados - Igor Murilo e Artur Felipe 2025
     </footer>
+    {% endblock %}
+
 </body>
 </html>
