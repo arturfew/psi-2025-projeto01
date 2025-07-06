@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% endblock head %}
 
+{% block header %}
+    <header>    
+        <h1>Flamengo 2019</h1>
+        <p>Paixão pelo futebol, dentro e fora de campo</p>
+    </header>
+{% endblock  %}
+
 {% block nav %}
     <nav>
         <a href="{% url 'inicio' %}">Início</a>

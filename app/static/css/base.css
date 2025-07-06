@@ -23,7 +23,7 @@ header {
   padding: 20px 0;
   text-align: center;
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 header h1 {
@@ -44,7 +44,8 @@ nav {
   padding: 12px 0;
   text-align: center;
   border-radius: 6px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+  
 }
 
 nav a {
@@ -88,4 +89,23 @@ footer {
   font-size: 0.9rem;
   color: #777;
   font-style: italic;
+}
+.jogadores-lista {
+  list-style: none;
+  padding: 0;
+}
+.jogador-foto{
+  width: 270px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.jogador-info{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }

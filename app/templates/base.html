@@ -5,17 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Início - Flamengo 2019{% endblock %}</title>
-
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-
-    {% block head %}{% endblock %}
+ {% block head %}<link rel="stylesheet" href="{% static 'css/base.css' %}">{% endblock %}
 </head>
 <body>
 
-    <header>
+    {% block header %}
         <h1>Flamengo 2019</h1>
         <p>Paixão pelo futebol, dentro e fora de campo</p>
-    </header>
+    {% endblock  %}
 
     {% block nav %}
     <nav>
