@@ -94,18 +94,19 @@ footer {
   list-style: none;
   padding: 0;
 }
-.jogador-foto{
-  width: 270px;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 20px;
-}
-.jogador-info{
-  display: flex;
-  align-items: center;
+
+.jogador-info {
+  float: left;
   background-color: white;
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.jogador-foto {
+  width: 270px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
 }
