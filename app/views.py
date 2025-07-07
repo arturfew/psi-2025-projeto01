@@ -16,6 +16,8 @@ def jogadores(request):
   {"nome": "Arrascaeta", "posicao": "meia", "idade": 25, "nascimento": "Nuevo Berlín" , "foto": "img/foto-arrascaeta.jpg"},
   {"nome": "Bruno Henrique", "posicao": "atacante", "idade": 28, "nascimento": "Belo Horizonte" , "foto": "img/foto-bruno-henrique.jpg"},
   {"nome": "Gabigol", "posicao": "atacante", "idade": 23, "nascimento": "São Bernardo do Campo",   "foto": "img/foto-gabigol.jpg"},
+  {"nome": "Jorge Jesus", "posicao": "tecnico", "idade": 70, "nascimento": "Amadora, Portugal",   "foto": "img/foto-jorge-jesus.png"},
+  
 ]
 
     context = {

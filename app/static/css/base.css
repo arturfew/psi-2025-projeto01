@@ -93,20 +93,27 @@ footer {
 .jogadores-lista {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.jogadores-lista > * {
+  margin-bottom: 20px; /* espaço entre jogadores */
 }
 
 .jogador-info {
-  float: left;
-  background-color: white;
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 20px;
 }
 
 .jogador-foto {
-  width: 270px;
+  width: 150px;
   height: auto;
   border-radius: 8px;
-  margin-right: 20px;
+}
+
+.jogadores-lista > * {
+  display: flex;
+  align-items: center;
 }
