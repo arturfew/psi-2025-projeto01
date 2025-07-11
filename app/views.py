@@ -25,5 +25,19 @@ def jogadores(request):
     }
     return render(request, "jogadores.html", context)
 
-def sobre(request):  
-    return render(request, "sobre.html")
+def sobre(request): 
+    titulos_list = [
+    {"titulo":"Campeonato Brasileiro Série A - Campeão com 90 pontos"},
+    {"titulo":"Copa Libertadores da América - Campeão invicto na fase final"},
+    {"titulo":"Carioca - Campeão Estadual"},
+    {"titulo":"Supercopa do Brasil - Campeão disputada em 2020, referente a 2019"},
+    ] 
+
+    context = {
+        "sobre": titulos_list,
+    }
+    return render(request, "sobre.html", context)
+    
+
+
+ 

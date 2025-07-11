@@ -95,10 +95,11 @@ footer {
   list-style: none;
   padding: 0;
   margin: 30px 0;
+  
 }
 
 .jogadores-lista > li {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 25px;
   margin-bottom: 20px;
   border-radius: 4px;
@@ -107,7 +108,7 @@ footer {
 
 .jogador-foto {
   width: 120px;
-  height: 120px;
+  height: 150px;
   object-fit: cover;
   border-radius: 4px;
   margin-right: 20px;
@@ -115,7 +116,9 @@ footer {
 }
 
 .jogador-info {
-  margin-left: 140px;
+  margin-left: 120px;
+  margin-bottom: 55px;
+  margin-top: 20px;
 }
 
 .jogador-info h3 {
@@ -152,4 +155,8 @@ footer {
   content: "";
   display: table;
   clear: both;
+}
+
+.titulos li{
+  list-style: none
 }

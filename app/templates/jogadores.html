@@ -25,10 +25,10 @@
     {% for jogador in jogadores %}
         <img src="{% static jogador.foto %}"  class="jogador-foto">
         <div class="jogador-info"   >
-            <li><strong> Nome:</strong> {{ jogador.nome }}</li><br>
-            <li><strong> posição:</strong> {{ jogador.posicao }}</li><br>
-            <li><strong> Idade:</strong> {{ jogador.idade }}</li><br >
-            <li><strong> nascimento: </strong> {{ jogador.nascimento }}</li>
+            <li><strong> Nome:</strong> {{ jogador.nome }}</li>
+            <li><strong> posição:</strong> {{ jogador.posicao }}</li>
+            <li><strong> Idade:</strong> {{ jogador.idade }}</li>
+            <li><strong> nascimento: </strong> {{ jogador.nascimento }}
         </div>
     {% endfor %}
     </ul>

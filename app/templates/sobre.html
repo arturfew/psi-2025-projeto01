@@ -17,38 +17,13 @@
 {% block content %}
 <section>
     <h2>Títulos Conquistados</h2>
-    <ul>
-        <li><strong>Campeonato Brasileiro Série A</strong> - Campeão com 90 pontos</li>
-        <li><strong>Copa Libertadores da América</strong> - Campeão invicto na fase final</li>
-        <li><strong>Campeonato Carioca</strong> - Campeão Estadual</li>
-        <li><strong>Supercopa do Brasil</strong> - Campeão (disputada em 2020, referente a 2019)</li>
-    </ul>
+<ul class="titulos">
+    {% for titulos in sobre %}
+    <li><strong> titulos:</strong> {{ titulos.titulo }}</li>
+    {% endfor %}
+
 </section>
-
-<section>
-    <h2>Recordes Alcançados</h2>
-    <ul>
-        <li>Maior pontuação do Flamengo na era dos pontos corridos (90 pontos)</li>
-        <li>28 vitórias no Brasileirão – recorde até então</li>
-        <li>Melhor ataque do campeonato (86 gols)</li>
-        <li>Primeira equipe brasileira a conquistar Brasileirão e Libertadores no mesmo ano desde 1963</li>
-        <li>Gabigol artilheiro do Brasileirão (25 gols) e da Libertadores (9 gols)</li>
-        <li>Jorge Jesus: primeiro técnico europeu campeão da Libertadores</li>
-    </ul>
-</section>
-{% endblock content %}
-
-<section>
-    <h2>Momento Marcante</h2>
-    <p>No dia 23 de novembro de 2019, o Flamengo venceu o River Plate por 2 a 1 na final da Libertadores, com dois gols de Gabigol nos minutos finais, em Lima, no Peru. No dia seguinte, garantiu também o título brasileiro com a derrota do Palmeiras para o Grêmio.</p>
-</section>
-
-
-
-
-
-
-
+{% endblock %}
 {% block footer %}
 <footer>
     &copy; todos os direitos reservados - Igor Murilo e Artur Felipe 2025
