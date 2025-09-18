@@ -1,5 +1,10 @@
 from django.db import models
 
+class Info(models.Model):
+    info = models.CharField(max_length=200)
+    sobre = models.TextField
+    data_publicacao = models.DateTimeField(auto_now=True)
+
 
 class Post(models.Model):  # Corrigido: models.Model e nome com maiúscula (boas práticas)
     titulo = models.CharField(max_length=200)

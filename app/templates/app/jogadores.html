@@ -38,11 +38,12 @@
         <li>Nenhum jogador encontrado.</li>
     {% endfor %}
 </ul>
-<script> #javaScript para ajustar tamanho das imagens
+
+<script> // javaScript para ajustar tamanho das imagens
 document.addEventListener("DOMContentLoaded", function() {
     const imagens = document.querySelectorAll(".jogadores-lista img");
     const larguraPadrao = 200;  // largura desejada
-    const alturaPadrao = 200;   // altura desejada
+    const alturaPadrao = 170;   // altura desejada
 
     imagens.forEach(function(img) {
         img.style.width = larguraPadrao + "px";
