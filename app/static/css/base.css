@@ -160,3 +160,56 @@ footer {
 .titulos li{
   list-style: none
 }
+.jogadores-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.post-item img {
+    width: 200px;         /* largura fixa */
+    height: 150px;        /* altura fixa */
+    object-fit: cover;    /* preenche a caixa sem distorcer */
+    border-radius: 8px;
+}
+
+.post-texto h3 {
+    margin: 0 0 10px 0;
+}
+
+.post-texto p {
+    margin: 0 0 10px 0;
+}
+
+.post-texto a {
+    color: #e50914;        /* cor do link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-texto a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .post-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .post-texto {
+        text-align: center;
+    }
+}
