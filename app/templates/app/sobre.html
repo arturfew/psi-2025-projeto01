@@ -18,8 +18,20 @@
 <section>
     <h2>Títulos Conquistados</h2>
 <ul class="titulos">
-    {% for titulos in sobre %}
-    <li><strong> </strong> {{ titulos.titulo }}</li>
+    {% for info in infos %}
+        <li class="info-item">
+            <div class="info-texto">
+                <h3>{{ info.info }}</h3>
+                {% if info.sobre|length > 100 %}
+                    <p>{{ info.sobre|truncatewords:30 }}...</p>
+                    
+                {% else %}
+                    <p>{{ info.sobre }}</p>
+                {% endif %}
+            </div>
+        </li>
+    {% empty %}
+        <li>Nenhum título encontrado.</li>
     {% endfor %}
 
 </section>

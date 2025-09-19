@@ -5,6 +5,9 @@ class Info(models.Model):
     sobre = models.TextField
     data_publicacao = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.info
+
 
 class Post(models.Model):  # Corrigido: models.Model e nome com maiúscula (boas práticas)
     titulo = models.CharField(max_length=200)
@@ -13,7 +16,7 @@ class Post(models.Model):  # Corrigido: models.Model e nome com maiúscula (boas
     data_publicacao = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.titulo  # Corrigido: self, não slef
+        return self.titulo 
 
 
 # Create your models here.
