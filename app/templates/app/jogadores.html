@@ -7,12 +7,14 @@
 <link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% endblock %}
 
-{% block header %}
+{% block header%}
 <header>
     <h1>Flamengo 2019</h1>
-    <p>Paixão pelo futebol, dentro e fora de campo</p>
+    <p>Uma vez Flamengo, sempre Flamengo</p>
 </header>
-{% endblock %}
+{% endblock header %}
+
+
 
 {% block content %}
 <h2>Elenco titular</h2>
@@ -39,19 +41,52 @@
     {% endfor %}
 </ul>
 
-<script> // javaScript para ajustar tamanho das imagens
+
+<style>
+.jogadores-lista {
+    display: flex;
+    overflow-x: auto;     /* habilita rolagem horizontal */
+    scroll-behavior: smooth; /* rolagem suave */
+    gap: 15px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.jogadores-lista::-webkit-scrollbar {
+    height: 8px;
+}
+.jogadores-lista::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+.jogadores-lista::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+.jogadores-lista .post-item {
+    flex: 0 0 auto;   /* impede que os itens encolham */
+    text-align: center;
+}
+</style>
+
+
+<script>
 document.addEventListener("DOMContentLoaded", function() {
     const imagens = document.querySelectorAll(".jogadores-lista img");
-    const larguraPadrao = 200;  // largura desejada
-    const alturaPadrao = 170;   // altura desejada
+    const larguraPadrao = 200;
+    const alturaPadrao = 170;
 
     imagens.forEach(function(img) {
         img.style.width = larguraPadrao + "px";
         img.style.height = alturaPadrao + "px";
-        img.style.objectFit = "cover"; // mantém proporção cortando partes extras
-        img.style.borderRadius = "8px"; // opcional
+        img.style.objectFit = "cover";
+        img.style.borderRadius = "8px";
     });
+
 });
+</script>
+
 </script>
 {% endblock %}
 

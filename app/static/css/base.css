@@ -18,6 +18,7 @@ body {
 
 /* Cabeçalho */
 header {
+  background-image: url(psi-2025-projeto01/app/static/img/foto-flamengo.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5),) no-repeat center/cover;
   background-color: #c8102e; /* vermelho Flamengo */
   color: white;
   padding: 20px 0;

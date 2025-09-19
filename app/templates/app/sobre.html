@@ -8,10 +8,10 @@
 {% endblock  %}
 
 {% block header %}
-    <header>
-        <h1>Flamengo 2019</h1>
-        <p>Paixão pelo futebol, dentro e fora de campo</p>
-    </header>
+<header>
+    <h1>Flamengo 2019</h1>
+    <p>Uma vez Flamengo, sempre Flamengo</p>
+</header>
 {% endblock header %}
 
 {% block content %}
@@ -23,7 +23,7 @@
             <div class="info-texto">
                 <h3>{{ info.info }}</h3>
                 {% if info.sobre|length > 100 %}
-                    <p>{{ info.sobre|truncatewords:30 }}...</p>
+                    <p>{{ info.sobre|truncatewords:30 }}.</p>
                     
                 {% else %}
                     <p>{{ info.sobre }}</p>
